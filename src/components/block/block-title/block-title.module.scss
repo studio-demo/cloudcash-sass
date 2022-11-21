@@ -1,0 +1,5 @@
+@import "../../../styles/type";
+
+.root {
+  @include type-heading-medium;
+}

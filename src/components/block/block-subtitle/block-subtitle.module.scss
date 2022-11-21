@@ -1,0 +1,7 @@
+@import "../../../styles/color";
+@import "../../../styles/type";
+
+.root {
+  @include type-body-medium;
+  color: $color-secondary;
+}

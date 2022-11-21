@@ -1,0 +1,24 @@
+@import "../../styles/spacing";
+@import "../../styles/media";
+
+.root {
+  min-height: 100%;
+
+  @include media-desktop-up {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+  }
+}
+
+.sidebar {
+  @include media-tablet-down {
+    display: none;
+  }
+}
+
+.pageContent {
+  padding-block-start: $spacing-page-block;
+  padding-block-end: $spacing-page-block;
+  padding-inline-start: $spacing-page-inline;
+  padding-inline-end: $spacing-page-inline;
+}

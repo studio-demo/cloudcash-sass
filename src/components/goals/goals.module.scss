@@ -1,0 +1,28 @@
+@import "../../styles/spacing";
+@import "../../styles/type";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing-2;
+}
+
+.goals {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: $spacing-1-5;
+}
+
+.header {
+  display: flex;
+  column-gap: $spacing-1;
+  align-items: flex-start;
+}
+
+.title {
+  @include type-heading-medium;
+}

@@ -1,0 +1,13 @@
+@import "../../styles/color";
+@import "../../styles/spacing";
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding-block: $spacing-1;
+  padding-inline: $spacing-2;
+  background-color: rgba($color-red, 0.1);
+  color: $color-red;
+}

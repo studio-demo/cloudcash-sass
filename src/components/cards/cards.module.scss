@@ -1,0 +1,46 @@
+@import "../../styles/color";
+@import "../../styles/media";
+@import "../../styles/spacing";
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: $spacing-5;
+  row-gap: $spacing-3;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
+}
+
+.creditCardSection {
+  flex-grow: 2;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creditCard {
+  width: 100%;
+}
+
+.details {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  min-width: 12.5rem;
+
+  text-align: end;
+
+  @include media-desktop-up {
+    row-gap: $spacing-1-5;
+    padding-inline-start: $spacing-3;
+    border-inline-start: 1px solid $color-divider;
+  }
+}
+
+.deactivateCardSection {
+  align-self: end;
+}

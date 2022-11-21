@@ -1,0 +1,91 @@
+$-mobile: 478px;
+$-tablet: 991px;
+$-desktop: 1279px;
+$-wide-desktop: 1474px;
+
+// Breakpoints
+
+@mixin media-mobile {
+  @media only screen and (max-width: #{$-mobile}) {
+    @content;
+  }
+}
+
+@mixin media-tablet-down {
+  @media only screen and (max-width: #{$-tablet}) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media only screen and (min-width: #{$-mobile + 1}) and (max-width: #{$-tablet}) {
+    @content;
+  }
+}
+
+@mixin media-tablet-up {
+  @media only screen and (min-width: #{$-mobile + 1}) {
+    @content;
+  }
+}
+
+@mixin media-desktop-and-tablet {
+  @media only screen and (min-width: #{$-mobile + 1}) and (max-width: #{$-desktop}) {
+    @content;
+  }
+}
+
+@mixin media-desktop-down {
+  @media only screen and (max-width: #{$-desktop}) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media only screen and (min-width: #{$-tablet + 1}) and (max-width: #{$-desktop}) {
+    @content;
+  }
+}
+
+@mixin media-desktop-up {
+  @media only screen and (min-width: #{$-tablet + 1}) {
+    @content;
+  }
+}
+
+@mixin media-wide-desktop-down {
+  @media only screen and (max-width: #{$-wide-desktop}) {
+    @content;
+  }
+}
+
+@mixin media-wide-desktop {
+  @media only screen and (min-width: #{$-desktop + 1}) and (max-width: #{$-wide-desktop}) {
+    @content;
+  }
+}
+
+@mixin media-wide-desktop-up {
+  @media only screen and (min-width: #{$-desktop + 1}) {
+    @content;
+  }
+}
+
+@mixin media-x-wide-desktop {
+  @media only screen and (min-width: #{$-wide-desktop + 1}) {
+    @content;
+  }
+}
+
+// Input type
+@mixin media-mouse {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin media-touch {
+  @media (hover: none) and (pointer: none) {
+    @content;
+  }
+}

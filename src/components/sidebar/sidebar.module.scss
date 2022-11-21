@@ -1,0 +1,42 @@
+@import "../../styles/color";
+@import "../../styles/spacing";
+@import "../../styles/type";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: $spacing-10;
+  position: sticky;
+  inset-block-start: 0;
+  max-height: 100vh;
+  padding-block-start: $spacing-4;
+  padding-block-end: $spacing-4;
+  padding-inline-start: $spacing-5;
+  padding-inline-end: $spacing-5;
+  border-inline-end: 1px solid $color-divider;
+}
+
+.nav {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & .footerIllustration {
+    width: 4.5rem;
+    margin-block-end: $spacing-1;
+  }
+
+  & .footerText {
+    @include type-body-micro;
+    line-height: 1.2;
+    width: 7rem;
+    margin-block-end: $spacing-2;
+  }
+}

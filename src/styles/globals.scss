@@ -1,0 +1,107 @@
+@import "type";
+@import "color";
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  src: url("../../public/font/inter/inter.ttf");
+}
+
+html,
+body {
+  @include type-body-medium;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv10", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-primary;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Reset box-sizing
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Reset WCS board styles
+// .simulationCanvas {
+//   width: 100% !important;
+//   height: 100% !important;
+//   margin: 0px !important;
+//   padding: 0px !important;
+// }
+
+// Direction agnostic layout helper
+// TODO: wrap with sass mixin or function to abstract the implementation
+html {
+  --logical-direction: 1;
+  --logical-direction-angle: 0deg;
+
+  &[dir="rtl"] {
+    --logical-direction: -1;
+    --logical-direction-angle: 180deg;
+  }
+}
+
+// Reset headings and paragraph
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  @include type-display-large;
+  font-weight: 700;
+}
+
+h2 {
+  @include type-display-medium;
+  font-weight: 700;
+}
+
+h3 {
+  @include type-display-small;
+  font-weight: 700;
+}
+
+h4 {
+  @include type-heading-large;
+  font-weight: 600;
+}
+
+h5 {
+  @include type-heading-medium;
+  font-weight: 600;
+}
+
+h6 {
+  @include type-heading-small;
+  font-weight: 600;
+}

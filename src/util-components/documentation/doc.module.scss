@@ -1,0 +1,12 @@
+@import "../../styles/spacing";
+
+.root {
+  margin-block-start: $spacing-3;
+  margin-block-end: $spacing-4;
+  margin-inline: $spacing-page-inline;
+}
+
+.content {
+  max-width: 80rem;
+  margin-inline: auto;
+}

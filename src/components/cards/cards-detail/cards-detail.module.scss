@@ -1,0 +1,70 @@
+@import "../../../styles/color";
+@import "../../../styles/media";
+@import "../../../styles/spacing";
+@import "../../../styles/type";
+
+.root {
+  display: grid;
+  justify-items: end;
+
+  @include media-desktop-up {
+    grid-template-areas:
+      "figure"
+      "label";
+  }
+  @include media-tablet-down {
+    grid-template-areas: "label figure";
+    grid-template-columns: 1fr 1fr;
+    column-gap: $spacing-4;
+    padding-block-start: $spacing-1;
+    padding-block-end: $spacing-1;
+    border-block-start: 1px solid $color-divider;
+  }
+}
+
+.label {
+  @include type-body-medium;
+  font-weight: 400;
+  grid-area: label;
+  color: $color-secondary;
+
+  @include media-tablet-down {
+    justify-self: start;
+  }
+}
+
+.currency {
+  @include type-heading-small;
+  font-weight: 600;
+  display: inline-block;
+  margin-inline-end: $spacing-0-5;
+}
+
+.amount {
+  grid-area: figure;
+  @include type-heading-small;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-feature-settings: "cv10", "cv11", "ss01", "tnum";
+  white-space: nowrap;
+  direction: ltr;
+  width: auto;
+
+  &.emphasized {
+    @include type-display-small;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  &.neutral {
+    color: $color-accent;
+  }
+
+  &.positive {
+    color: $color-positive;
+  }
+
+  &.negative {
+    color: $color-negative;
+  }
+}

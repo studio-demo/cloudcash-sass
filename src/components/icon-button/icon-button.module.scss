@@ -1,0 +1,15 @@
+@use "../../styles/button";
+
+.root {
+  @include button.reset;
+  @include button.premium;
+  line-height: 0;
+
+  &.small {
+    @include button.icon-button-base($size: small);
+  }
+
+  &.medium {
+    @include button.icon-button-base($size: medium);
+  }
+}

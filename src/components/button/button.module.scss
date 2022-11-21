@@ -1,0 +1,15 @@
+@use "../../styles/button";
+@import "../../styles/color";
+
+.root {
+  @include button.reset;
+  @include button.text-button-base;
+  @include button.premium;
+
+  &:focus-visible {
+    outline: $color-accent auto 1px;
+    outline: activeborder auto 1px;
+    outline: -moz-mac-focusring auto 1px;
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+}

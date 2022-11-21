@@ -1,0 +1,33 @@
+@use "../../../styles/material";
+@import "../../../styles/color";
+@import "../../../styles/spacing";
+@import "../../../styles/type";
+
+.root > a {
+  @include material.card;
+  display: block;
+  height: 100%;
+  padding-block-start: $spacing-1-5;
+  padding-block-end: $spacing-1-5;
+  padding-inline-start: $spacing-3;
+  padding-inline-end: $spacing-3;
+}
+
+.title {
+  @include type-heading-medium;
+  font-weight: 400;
+}
+
+.amount {
+  @include type-heading-medium;
+  font-weight: 500;
+}
+
+.date {
+  @include type-body-medium;
+  color: $color-secondary;
+}
+
+.illustration {
+  margin-block-start: $spacing-4;
+}

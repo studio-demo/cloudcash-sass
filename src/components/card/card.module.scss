@@ -1,0 +1,6 @@
+@use "../../styles/material";
+
+.root {
+  @include material.card;
+  @include material.content-grid;
+}

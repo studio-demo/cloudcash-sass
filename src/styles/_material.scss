@@ -1,0 +1,23 @@
+@import "./color";
+@import "./radius";
+@import "./spacing";
+
+@mixin content-grid {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing-2;
+  padding-block-start: $spacing-2;
+  padding-block-end: $spacing-2;
+  padding-inline-start: $spacing-3;
+  padding-inline-end: $spacing-3;
+}
+
+@mixin card {
+  border-radius: $radius-card;
+  background-color: $color-background;
+  box-shadow: 0px 16px 24px rgba($color-black, 0.06),
+    0px 2px 6px rgba($color-black, 0.04), 0px 0px 1px rgba($color-black, 0.04);
+}
+
+@mixin block {
+}

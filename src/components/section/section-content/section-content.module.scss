@@ -1,0 +1,13 @@
+@import "../../../styles/media";
+
+.root {
+  width: 100%;
+
+  @include media-x-wide-desktop {
+    max-width: 80rem;
+  }
+
+  @include media-wide-desktop-down {
+    max-width: 60rem;
+  }
+}

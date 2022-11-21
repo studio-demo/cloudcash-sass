@@ -1,0 +1,26 @@
+@use "../../styles/button";
+@import "../../styles/color";
+@import "../../styles/radius";
+
+.root {
+  @include button.reset;
+  @include button.icon-button-base;
+  line-height: 0;
+  position: relative;
+  color: currentColor;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.indicator {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: $radius-pill;
+  background-color: $color-red;
+  box-shadow: 0 0 0 2px $color-background;
+}
