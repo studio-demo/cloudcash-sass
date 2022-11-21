@@ -17,8 +17,8 @@
 }
 
 .pageContent {
-  padding-block-start: $spacing-page-block;
-  padding-block-end: $spacing-page-block;
-  padding-inline-start: $spacing-page-inline;
-  padding-inline-end: $spacing-page-inline;
+  padding-top: $spacing-page-block;
+  padding-bottom: $spacing-page-block;
+  padding-left: $spacing-page-inline;
+  padding-right: $spacing-page-inline;
 }

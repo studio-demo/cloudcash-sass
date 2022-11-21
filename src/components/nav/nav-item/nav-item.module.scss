@@ -3,10 +3,10 @@
 @import "../../../styles/radius";
 
 .root {
-  padding-block-start: $spacing-1;
-  padding-block-end: $spacing-1;
-  padding-inline-start: $spacing-1-5;
-  padding-inline-end: $spacing-1-5;
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+  padding-left: $spacing-1-5;
+  padding-right: $spacing-1-5;
   border-radius: $radius-small;
   color: $color-secondary;
   font-weight: 600;

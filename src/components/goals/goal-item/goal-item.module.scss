@@ -7,10 +7,10 @@
   @include material.card;
   display: block;
   height: 100%;
-  padding-block-start: $spacing-1-5;
-  padding-block-end: $spacing-1-5;
-  padding-inline-start: $spacing-3;
-  padding-inline-end: $spacing-3;
+  padding-top: $spacing-1-5;
+  padding-bottom: $spacing-1-5;
+  padding-left: $spacing-3;
+  padding-right: $spacing-3;
 }
 
 .title {
@@ -29,5 +29,5 @@
 }
 
 .illustration {
-  margin-block-start: $spacing-4;
+  margin-top: $spacing-4;
 }

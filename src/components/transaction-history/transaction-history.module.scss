@@ -6,7 +6,7 @@
 .legend {
   @include media-desktop-up {
     @include transaction-list-grid;
-    padding-block-end: $spacing-1;
+    padding-bottom: $spacing-1;
     color: $color-secondary;
     font-weight: 500;
   }

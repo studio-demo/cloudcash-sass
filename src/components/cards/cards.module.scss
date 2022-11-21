@@ -36,8 +36,8 @@
 
   @include media-desktop-up {
     row-gap: $spacing-1-5;
-    padding-inline-start: $spacing-3;
-    border-inline-start: 1px solid $color-divider;
+    padding-left: $spacing-3;
+    border-left: 1px solid $color-divider;
   }
 }
 

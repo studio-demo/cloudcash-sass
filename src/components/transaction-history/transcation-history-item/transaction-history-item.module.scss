@@ -6,15 +6,15 @@
 
 .root {
   @include transaction-list-grid;
-  padding-block-start: $spacing-1-5;
-  padding-block-end: $spacing-1-5;
+  padding-top: $spacing-1-5;
+  padding-bottom: $spacing-1-5;
 
   &:not(:last-child) {
     box-shadow: 0 -1px 0 0 $color-divider inset;
   }
 
   &:last-child {
-    margin-block-end: calc(-1 * $spacing-1-5);
+    margin-bottom: calc(-1 * $spacing-1-5);
   }
 }
 
@@ -40,7 +40,7 @@
   color: $color-secondary;
 
   @include media-tablet-down {
-    margin-inline-start: $spacing-5;
+    margin-left: $spacing-5;
   }
 }
 

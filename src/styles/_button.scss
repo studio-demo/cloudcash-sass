@@ -25,25 +25,25 @@
 @mixin text-button-base {
   @include type-body-tiny;
   font-weight: 600;
-  padding-block-start: $spacing-1-5;
-  padding-block-end: $spacing-1-5;
-  padding-inline-start: $spacing-2-5;
-  padding-inline-end: $spacing-2-5;
+  padding-top: $spacing-1-5;
+  padding-bottom: $spacing-1-5;
+  padding-left: $spacing-2-5;
+  padding-right: $spacing-2-5;
   border-radius: $radius-x-large;
 }
 
 @mixin icon-button-base($size: medium) {
   @if $size == medium {
-    padding-block-start: $spacing-1;
-    padding-block-end: $spacing-1;
-    padding-inline-start: $spacing-1;
-    padding-inline-end: $spacing-1;
+    padding-top: $spacing-1;
+    padding-bottom: $spacing-1;
+    padding-left: $spacing-1;
+    padding-right: $spacing-1;
   }
   @if $size == small {
-    padding-block-start: $spacing-0-5;
-    padding-block-end: $spacing-0-5;
-    padding-inline-start: $spacing-0-5;
-    padding-inline-end: $spacing-0-5;
+    padding-top: $spacing-0-5;
+    padding-bottom: $spacing-0-5;
+    padding-left: $spacing-0-5;
+    padding-right: $spacing-0-5;
   }
 
   border-radius: $radius-pill;

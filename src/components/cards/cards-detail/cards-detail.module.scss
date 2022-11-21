@@ -16,9 +16,9 @@
     grid-template-areas: "label figure";
     grid-template-columns: 1fr 1fr;
     column-gap: $spacing-4;
-    padding-block-start: $spacing-1;
-    padding-block-end: $spacing-1;
-    border-block-start: 1px solid $color-divider;
+    padding-top: $spacing-1;
+    padding-bottom: $spacing-1;
+    border-top: 1px solid $color-divider;
   }
 }
 
@@ -37,7 +37,7 @@
   @include type-heading-small;
   font-weight: 600;
   display: inline-block;
-  margin-inline-end: $spacing-0-5;
+  margin-right: $spacing-0-5;
 }
 
 .amount {

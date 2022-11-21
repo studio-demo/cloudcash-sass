@@ -15,7 +15,7 @@
   @include media-desktop-up {
     display: flex;
     align-items: center;
-    margin-block-start: $spacing-1;
+    margin-top: $spacing-1;
     column-gap: $spacing-3;
   }
 

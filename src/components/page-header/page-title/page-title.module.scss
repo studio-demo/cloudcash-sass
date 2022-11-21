@@ -3,7 +3,7 @@
 @import "../../../styles/type";
 
 .root {
-  margin-block-end: $spacing-1;
+  margin-bottom: $spacing-1;
 
   @include media-desktop-down {
     @include type-display-medium;

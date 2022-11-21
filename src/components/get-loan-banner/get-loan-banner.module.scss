@@ -10,10 +10,10 @@
 
   display: flex;
   align-items: flex-end;
-  padding-block-start: $spacing-1-5;
-  padding-block-end: $spacing-1-5;
-  padding-inline-start: $spacing-1-5;
-  padding-inline-end: $spacing-1-5;
+  padding-top: $spacing-1-5;
+  padding-bottom: $spacing-1-5;
+  padding-left: $spacing-1-5;
+  padding-right: $spacing-1-5;
   border-radius: $radius-card;
   color: $color-white;
   background-color: #ed654c;
@@ -31,5 +31,5 @@
 
 .icon {
   position: relative;
-  inset-block-start: calc($spacing-0-25 + $spacing-0-5);
+  top: calc($spacing-0-25 + $spacing-0-5);
 }
