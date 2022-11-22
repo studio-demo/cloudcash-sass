@@ -39,7 +39,7 @@
 .date {
   color: $color-secondary;
 
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     margin-left: $spacing-5;
   }
 }

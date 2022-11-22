@@ -6,11 +6,11 @@
   column-gap: $spacing-3;
   align-items: start;
 
-  @include media-desktop-up {
+  @media only screen and (min-width: #{$media-tablet + 1}) {
     grid-template-columns: 1fr 8rem 6rem 6rem;
     grid-template-areas: "receiver type date amount";
   }
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     grid-template-columns: 1fr 6rem;
     grid-template-areas:
       "receiver amount"

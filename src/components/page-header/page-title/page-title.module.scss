@@ -5,7 +5,7 @@
 .root {
   margin-bottom: $spacing-1;
 
-  @include media-desktop-down {
+  @media only screen and (max-width: #{$media-desktop}) {
     font: $type-display-medium;
     font-weight: 700;
   }

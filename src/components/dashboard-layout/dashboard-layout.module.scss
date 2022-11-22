@@ -4,14 +4,14 @@
 .root {
   min-height: 100%;
 
-  @include media-desktop-up {
+  @media only screen and (min-width: #{$media-tablet + 1}) {
     display: grid;
     grid-template-columns: 16rem 1fr;
   }
 }
 
 .sidebar {
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     display: none;
   }
 }

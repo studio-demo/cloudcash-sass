@@ -12,12 +12,12 @@
 .dashboardGrid {
   display: grid;
 
-  @include media-x-wide-desktop {
+  @media only screen and (min-width: #{$media-wide-desktop + 1}) {
     grid-template-columns: minmax(38rem, 1fr) auto;
     column-gap: $spacing-4;
   }
 
-  @include media-wide-desktop-down {
+  @media only screen and (max-width: #{$media-wide-desktop}) {
     row-gap: $spacing-5;
   }
 }
@@ -33,7 +33,7 @@
   flex-direction: column;
   row-gap: $spacing-5;
 
-  @include media-x-wide-desktop {
+  @media only screen and (min-width: #{$media-wide-desktop + 1}) {
     width: 30rem;
   }
 
@@ -42,11 +42,11 @@
     grid-template-columns: 2fr 1fr;
     column-gap: $spacing-2;
 
-    @include media-x-wide-desktop {
+    @media only screen and (min-width: #{$media-wide-desktop + 1}) {
       grid-template-columns: 2fr 1fr;
     }
 
-    @include media-wide-desktop-down {
+    @media only screen and (max-width: #{$media-wide-desktop}) {
       grid-template-columns: 1fr 1fr;
     }
   }
