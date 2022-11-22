@@ -3,11 +3,11 @@
 .root {
   width: 100%;
 
-  @include media-x-wide-desktop {
+  @media only screen and (min-width: #{$media-wide-desktop + 1}) {
     max-width: 80rem;
   }
 
-  @include media-wide-desktop-down {
+  @media only screen and (max-width: #{$media-wide-desktop}) {
     max-width: 60rem;
   }
 }

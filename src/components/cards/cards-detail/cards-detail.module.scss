@@ -7,12 +7,12 @@
   display: grid;
   justify-items: end;
 
-  @include media-desktop-up {
+  @media only screen and (min-width: #{$media-tablet + 1}) {
     grid-template-areas:
       "figure"
       "label";
   }
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     grid-template-areas: "label figure";
     grid-template-columns: 1fr 1fr;
     column-gap: $spacing-4;
@@ -28,7 +28,7 @@
   grid-area: label;
   color: $color-secondary;
 
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     justify-self: start;
   }
 }

@@ -4,13 +4,13 @@
 @import "../../styles/spacing";
 
 .legend {
-  @include media-desktop-up {
+  @media only screen and (min-width: #{$media-tablet + 1}) {
     @include transaction-list-grid;
     padding-bottom: $spacing-1;
     color: $color-secondary;
     font-weight: 500;
   }
-  @include media-tablet-down {
+  @media only screen and (max-width: #{$media-tablet}) {
     display: none;
   }
 }
