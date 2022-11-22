@@ -17,6 +17,6 @@
 }
 
 .label {
-  @include type-body-small;
+  font: $type-body-small;
   color: $color-secondary;
 }

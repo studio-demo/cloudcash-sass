@@ -2,6 +2,6 @@
 @import "../../../styles/type";
 
 .root {
-  @include type-body-medium;
+  font: $type-body-medium;
   color: $color-secondary;
 }

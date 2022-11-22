@@ -9,7 +9,7 @@
 
 html,
 body {
-  @include type-body-medium;
+  font: $type-body-medium;
   padding: 0;
   margin: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -77,31 +77,31 @@ p {
 }
 
 h1 {
-  @include type-display-large;
+  font: $type-display-large;
   font-weight: 700;
 }
 
 h2 {
-  @include type-display-medium;
+  font: $type-display-medium;
   font-weight: 700;
 }
 
 h3 {
-  @include type-display-small;
+  font: $type-display-small;
   font-weight: 700;
 }
 
 h4 {
-  @include type-heading-large;
+  font: $type-heading-large;
   font-weight: 600;
 }
 
 h5 {
-  @include type-heading-medium;
+  font: $type-heading-medium;
   font-weight: 600;
 }
 
 h6 {
-  @include type-heading-small;
+  font: $type-heading-small;
   font-weight: 600;
 }

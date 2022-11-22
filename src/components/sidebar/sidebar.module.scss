@@ -34,7 +34,7 @@
   }
 
   & .footerText {
-    @include type-body-micro;
+    font: $type-body-micro;
     line-height: 1.2;
     width: 7rem;
     margin-bottom: $spacing-2;

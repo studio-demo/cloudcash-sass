@@ -7,7 +7,7 @@
 }
 
 .description {
-  @include type-body-micro;
+  font: $type-body-micro;
   font-weight: 400;
   color: rgba($color-primary, 0.75);
 }

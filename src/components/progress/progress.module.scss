@@ -20,7 +20,7 @@
 }
 
 .label {
-  @include type-body-medium;
+  font: $type-body-medium;
   line-height: 1.2;
   font-weight: 400;
   grid-area: label;
@@ -28,7 +28,7 @@
 }
 
 .value {
-  @include type-heading-large;
+  font: $type-heading-large;
   line-height: 0.5rem;
   grid-area: value;
 }

@@ -33,13 +33,13 @@
 }
 
 .cardLogo {
-  @include type-body-large;
+  font: $type-body-large;
   font-weight: 600;
   grid-area: logo;
 }
 
 .cardNumber {
-  @include type-heading-medium;
+  font: $type-heading-medium;
   font-feature-settings: "cv10", "cv11", "ss01";
   font-weight: 500;
 
@@ -48,11 +48,11 @@
 }
 
 .cardFooterItemLabel {
-  @include type-body-micro;
+  font: $type-body-micro;
 }
 
 .cardFooterItemValue {
-  @include type-body-small;
+  font: $type-body-small;
   font-weight: 500;
 }
 

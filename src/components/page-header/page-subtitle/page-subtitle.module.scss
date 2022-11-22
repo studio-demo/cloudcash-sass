@@ -2,7 +2,7 @@
 @import "../../../styles/type";
 
 .root {
-  @include type-body-large;
+  font: $type-body-large;
 
   display: block;
   color: $color-secondary;

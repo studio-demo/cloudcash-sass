@@ -48,7 +48,7 @@
 }
 
 .userDetails {
-  @include type-body-medium;
+  font: $type-body-medium;
 
   display: flex;
   flex-direction: column;

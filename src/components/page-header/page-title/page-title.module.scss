@@ -6,6 +6,7 @@
   margin-bottom: $spacing-1;
 
   @include media-desktop-down {
-    @include type-display-medium;
+    font: $type-display-medium;
+    font-weight: 700;
   }
 }

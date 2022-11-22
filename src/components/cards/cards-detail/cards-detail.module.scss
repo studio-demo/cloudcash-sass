@@ -23,7 +23,7 @@
 }
 
 .label {
-  @include type-body-medium;
+  font: $type-body-medium;
   font-weight: 400;
   grid-area: label;
   color: $color-secondary;
@@ -34,7 +34,7 @@
 }
 
 .currency {
-  @include type-heading-small;
+  font: $type-heading-small;
   font-weight: 600;
   display: inline-block;
   margin-right: $spacing-0-5;
@@ -42,7 +42,7 @@
 
 .amount {
   grid-area: figure;
-  @include type-heading-small;
+  font: $type-heading-small;
   font-weight: 600;
   letter-spacing: -0.03em;
   font-feature-settings: "cv10", "cv11", "ss01", "tnum";
@@ -51,7 +51,7 @@
   width: auto;
 
   &.emphasized {
-    @include type-display-small;
+    font: $type-display-small;
     font-weight: 700;
     letter-spacing: -0.03em;
   }

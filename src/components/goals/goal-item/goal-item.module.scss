@@ -14,17 +14,17 @@
 }
 
 .title {
-  @include type-heading-medium;
+  font: $type-heading-medium;
   font-weight: 400;
 }
 
 .amount {
-  @include type-heading-medium;
+  font: $type-heading-medium;
   font-weight: 500;
 }
 
 .date {
-  @include type-body-medium;
+  font: $type-body-medium;
   color: $color-secondary;
 }
 

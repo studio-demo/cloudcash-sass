@@ -19,7 +19,7 @@
 }
 
 .userName {
-  @include type-body-small;
+  font: $type-body-small;
   line-height: 1rem;
 }
 

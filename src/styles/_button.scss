@@ -23,7 +23,7 @@
 }
 
 @mixin text-button-base {
-  @include type-body-tiny;
+  font: $type-body-tiny;
   font-weight: 600;
   padding-top: $spacing-1-5;
   padding-bottom: $spacing-1-5;

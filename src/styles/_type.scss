@@ -1,157 +1,16 @@
 @use "sass:map";
 
-$-scale: (
-  display-large: (
-    font-size: 2.875rem,
-    line-height: 3.25rem,
-    letter-spacing: -0.01em,
-  ),
-  display-medium: (
-    font-size: 2.313rem,
-    line-height: 3rem,
-    letter-spacing: -0.01em,
-  ),
-  display-small: (
-    font-size: 1.875rem,
-    line-height: 2.5rem,
-    letter-spacing: -0.005em,
-  ),
-  heading-large: (
-    font-size: 1.5rem,
-    line-height: 2rem,
-  ),
-  heading-medium: (
-    font-size: 1.25rem,
-    line-height: 1.75rem,
-  ),
-  heading-small: (
-    font-size: 1.125rem,
-    line-height: 1.75rem,
-  ),
-  body-large: (
-    font-size: 1rem,
-    line-height: 1.5rem,
-  ),
-  body-medium: (
-    font-size: 0.875rem,
-    line-height: 1.5rem,
-  ),
-  body-small: (
-    font-size: 0.75rem,
-    line-height: 1.25rem,
-  ),
-  body-tiny: (
-    font-size: 0.688rem,
-    line-height: 1.25rem,
-  ),
-  body-micro: (
-    font-size: 0.563rem,
-    line-height: 1rem,
-  ),
-);
-
-@function -get-text-property($hierarchy, $property) {
-  @if map.has-key($-scale, $hierarchy, $property) {
-    @return map.get($-scale, $hierarchy, $property);
-  }
-  @return null;
-}
-
-@mixin -text-styles($hierarchy) {
-  font-size: -get-text-property($hierarchy, "font-size");
-  line-height: -get-text-property($hierarchy, "line-height");
-  letter-spacing: -get-text-property($hierarchy, "letter-spacing");
-}
-
-// Type mixins
-@mixin type-display-large {
-  @include -text-styles("display-large");
-}
-
-@mixin type-display-medium {
-  @include -text-styles("display-medium");
-}
-
-@mixin type-display-small {
-  @include -text-styles("display-small");
-}
-
-@mixin type-heading-large {
-  @include -text-styles("heading-large");
-}
-
-@mixin type-heading-medium {
-  @include -text-styles("heading-medium");
-}
-
-@mixin type-heading-small {
-  @include -text-styles("heading-small");
-}
-
-@mixin type-body-large {
-  @include -text-styles("body-large");
-}
-
-@mixin type-body-medium {
-  @include -text-styles("body-medium");
-}
-
-@mixin type-body-small {
-  @include -text-styles("body-small");
-}
-
-@mixin type-body-tiny {
-  @include -text-styles("body-tiny");
-}
-
-@mixin type-body-micro {
-  @include -text-styles("body-micro");
-}
+$-font-family: "Inter", Arial, Helvetica, sans-serif;
 
 // Type tokens
-$type-display-large-font-size: -get-text-property("display-large", "font-size");
-$type-display-large-line-height: -get-text-property(
-  "display-large",
-  "line-height"
-);
-$type-display-medium-font-size: -get-text-property(
-  "display-medium",
-  "font-size"
-);
-$type-display-medium-line-height: -get-text-property(
-  "display-medium",
-  "line-height"
-);
-$type-display-small-font-size: -get-text-property("display-small", "font-size");
-$type-display-small-line-height: -get-text-property(
-  "display-small",
-  "line-height"
-);
-$type-heading-large-font-size: -get-text-property("heading-large", "font-size");
-$type-heading-large-line-height: -get-text-property(
-  "heading-large",
-  "line-height"
-);
-$type-heading-medium-font-size: -get-text-property(
-  "heading-medium",
-  "font-size"
-);
-$type-heading-medium-line-height: -get-text-property(
-  "heading-medium",
-  "line-height"
-);
-$type-heading-small-font-size: -get-text-property("heading-small", "font-size");
-$type-heading-small-line-height: -get-text-property(
-  "heading-small",
-  "line-height"
-);
-$type-body-large-font-size: -get-text-property("body-large", "font-size");
-$type-body-large-line-height: -get-text-property("body-large", "line-height");
-$type-body-medium-font-size: -get-text-property("body-medium", "font-size");
-$type-body-medium-line-height: -get-text-property("body-medium", "line-height");
-$type-body-small-font-size: -get-text-property("body-small", "font-size");
-$type-body-small-line-height: -get-text-property("body-small", "line-height");
-$type-body-tiny-font-size: -get-text-property("body-tiny", "font-size");
-$type-body-tiny-line-height: -get-text-property("body-tiny", "line-height");
-$type-body-micro-font-size: -get-text-property("body-micro", "font-size");
-$type-body-micro-line-height: -get-text-property("body-micro", "line-height");
+$type-display-large: 2.875rem/3.25rem $-font-family;
+$type-display-medium: 2.313rem/3rem $-font-family;
+$type-display-small: 1.875rem/2.5rem $-font-family;
+$type-heading-large: 1.5rem/2rem $-font-family;
+$type-heading-medium: 1.25rem/1.75rem $-font-family;
+$type-heading-small: 1.125rem/1.75rem $-font-family;
+$type-body-large: 1rem/1.5rem $-font-family;
+$type-body-medium: 0.875rem/1.5rem $-font-family;
+$type-body-small: 0.75rem/1.25rem $-font-family;
+$type-body-tiny: 0.688rem/1.25rem $-font-family;
+$type-body-micro: 0.563rem/1rem $-font-family;

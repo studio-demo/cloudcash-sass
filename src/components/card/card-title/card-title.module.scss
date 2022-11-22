@@ -1,5 +1,6 @@
 @import "../../../styles/type";
 
 .root {
-  @include type-heading-medium;
+  font: $type-heading-medium;
+  font-weight: 600;
 }
