@@ -4,7 +4,7 @@ import { Avatar } from "./avatar";
 import { Doc } from "../../util-components/documentation/doc";
 import { DocHeader } from "../../util-components/documentation/doc-header";
 import { DocSection } from "../../util-components/documentation/doc-section";
-import img from "../../../public/profile-pics/ann.jpg";
+import img from "../../../public/images/profile-pics/ann.jpg";
 
 export default createBoard({
   name: "📒 Avatar",
