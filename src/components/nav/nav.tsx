@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import classNames from "classnames";
 import { NavItem, NavItemProps } from "./nav-item/nav-item";
 import styles from "./nav.module.scss";
 
@@ -12,7 +13,7 @@ interface NavProps extends NavSubcomponets {
 }
 
 const Nav = ({ className, children }: NavProps) => {
-  return <nav className={`${styles.root} ${className}`}>{children}</nav>;
+  return <nav className={classNames(styles.root, className)}>{children}</nav>;
 };
 
 const Item = (props: NavItemProps) => <NavItem {...props} />;

@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import { Icon } from "../icon/icon";
 import styles from "./avatar.module.scss";
 
@@ -14,11 +15,17 @@ export const Avatar = ({ className, profilePic, userName }: AvatarProps) => {
   const showDefaultUserPic = !profilePic && !showInitials;
   return (
     <div
-      className={`${styles.root} ${
-        profilePic && styles.profilePic
-      } ${className}`}
+      className={classNames(
+        styles.root,
+        {
+          [styles.profilePic]: profilePic,
+        },
+        className
+      )}
       style={
-        !!profilePic ? { backgroundImage: `url("${profilePic}")` } : undefined
+        typeof profilePic === "string"
+          ? { backgroundImage: `url("${profilePic}")` }
+          : undefined
       }
     >
       {showInitials && <span>{initials}</span>}

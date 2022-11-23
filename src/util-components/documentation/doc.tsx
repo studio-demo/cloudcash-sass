@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import classNames from "classnames";
 import styles from "./doc.module.scss";
 
 export interface DocProps {
@@ -8,7 +9,7 @@ export interface DocProps {
 
 export const Doc = ({ className, children }: DocProps) => {
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <div className={styles.content}>{children}</div>
     </div>
   );

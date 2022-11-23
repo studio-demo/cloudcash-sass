@@ -1,4 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
+import classNames from "classnames";
 import { Icon, Glyph } from "../icon/icon";
 import styles from "./status-badge-icon-button.module.scss";
 
@@ -19,7 +20,7 @@ export const StatusBadgeIconButton = ({
 }: StatusBadgeIconButtonProps) => {
   return (
     <button
-      className={`${styles.root} ${className}`}
+      className={classNames(styles.root, className)}
       aria-label={hasUpdates ? `${label} – has unread items` : label}
       {...props}
     >

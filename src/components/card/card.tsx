@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from "react";
 import { CardTitle } from "./card-title/card-title";
 import { CardSubtitle } from "./card-subtitle/card-subtitle";
 import { CardContent } from "./card-content/card-content";
+import classNames from "classnames";
 import styles from "./card.module.scss";
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
@@ -11,7 +12,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const Card = ({ className, children }: CardProps) => {
-  return <div className={`${styles.root} ${className}`}>{children}</div>;
+  return <div className={classNames(styles.root, className)}>{children}</div>;
 };
 
 Card.Title = CardTitle;

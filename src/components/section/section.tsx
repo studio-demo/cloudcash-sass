@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from "react";
+import classNames from "classnames";
 import { SectionContent } from "./section-content/section-content";
 import styles from "./section.module.scss";
 
@@ -8,7 +9,7 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
 
 export const Section = ({ className, children }: SectionProps) => {
   return (
-    <section className={`${styles.root} ${className}`}>{children}</section>
+    <section className={classNames(styles.root, className)}>{children}</section>
   );
 };
 

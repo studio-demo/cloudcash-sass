@@ -1,4 +1,5 @@
 import React, { LiHTMLAttributes } from "react";
+import classNames from "classnames";
 import { Icon, Glyph } from "../../icon/icon";
 import { Progress } from "../../progress/progress";
 import styles from "./outcome-statistics-item.module.scss";
@@ -24,7 +25,7 @@ export const OutcomeStatisticsItem = ({
 
   return (
     <li className={styles.root}>
-      <div className={`${styles.illustration} ${styles[type]}`}>
+      <div className={classNames(styles.illustration, styles[type])}>
         <Icon glyph={glyphMap[type]} />
       </div>
       <Progress

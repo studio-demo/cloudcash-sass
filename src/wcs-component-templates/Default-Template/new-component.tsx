@@ -1,10 +1,11 @@
-import React from 'react';
-import styles from './new-component.module.scss';
+import React from "react";
+import classNames from "classnames";
+import styles from "./new-component.module.scss";
 
 export interface NewComponentProps {
-    className?: string;
+  className?: string;
 }
 
 export const NewComponent: React.FC<NewComponentProps> = ({ className }) => {
-    return <div className={`${styles.root} ${className}`}>NewComponent</div>;
+  return <div className={classNames(styles.root, className)}>NewComponent</div>;
 };

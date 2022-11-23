@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import styles from "./cards-detail.module.scss";
 
 interface CardsDetailProps {
@@ -24,12 +25,12 @@ export const CardsDetail = ({
   }).format(amount);
 
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <h6 className={styles.label}>{label}</h6>
       <span
-        className={`${styles.amount} ${styles[trend]} ${
-          emphasized && styles.emphasized
-        }`}
+        className={classNames(styles.amount, styles[trend], {
+          [styles.emphasized]: emphasized,
+        })}
       >
         <span className={styles.currency}>{currency}</span>
         {formattedAmount}

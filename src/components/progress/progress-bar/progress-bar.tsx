@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import styles from "./progress-bar.module.scss";
 
 interface ProgressBarProps {
@@ -14,8 +15,11 @@ export const ProgressBar = ({
 }: ProgressBarProps) => {
   const fill = { width: `${progress}%` } as React.CSSProperties;
   return (
-    <div className={`${styles.root} ${className}`}>
-      <div className={`${styles.fill} ${customFillClassName}`} style={fill} />
+    <div className={classNames(styles.root, className)}>
+      <div
+        className={classNames(styles.fill, customFillClassName)}
+        style={fill}
+      />
     </div>
   );
 };

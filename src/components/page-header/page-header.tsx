@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-
+import classNames from "classnames";
 import { PageSubtitle, PageSubtitleProps } from "./page-subtitle/page-subtitle";
 import { PageTitle, PageTitleProps } from "./page-title/page-title";
 import { StatusBadgeIconButton } from "../status-badge-icon-button/status-badge-icon-button";
@@ -17,7 +17,7 @@ interface PageHeaderProps extends PageHeaderSubcomponets {
 
 const PageHeader = ({ className, children }: PageHeaderProps) => {
   return (
-    <header className={`${styles.root} ${className}`}>
+    <header className={classNames(styles.root, className)}>
       <div>{children}</div>
       <div className={styles.utilities}>
         <div className={styles.actionsSection}>

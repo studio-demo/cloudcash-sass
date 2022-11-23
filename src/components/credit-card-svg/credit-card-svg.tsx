@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import styles from "./credit-card-svg.module.scss";
 
 interface CreditCardSvgProps {
@@ -21,7 +22,7 @@ export const CreditCardSvg = ({
   expireDateYear,
 }: CreditCardSvgProps) => {
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <div className={styles.creditCard}>
         <svg width="100%" height="100%" viewBox="0 0 320 206">
           <text fill="currentColor" fontSize="8" fontWeight="500">

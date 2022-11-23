@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from "react";
 import { BlockTitle } from "./block-title/block-title";
 import { BlockSubtitle } from "./block-subtitle/block-subtitle";
 import { BlockContent } from "./block-content/block-content";
+import classNames from "classnames";
 import styles from "./block.module.scss";
 
 interface BlockProps extends HTMLAttributes<HTMLDivElement> {
@@ -11,7 +12,7 @@ interface BlockProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const Block = ({ className, children }: BlockProps) => {
-  return <div className={`${styles.root} ${className}`}>{children}</div>;
+  return <div className={classNames(styles.root, className)}>{children}</div>;
 };
 
 Block.Title = BlockTitle;

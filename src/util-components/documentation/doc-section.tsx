@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import classNames from "classnames";
 import styles from "./doc-section.module.scss";
 
 export interface DocSectionProps {
@@ -33,7 +34,7 @@ export const DocSection = ({
   }, [title, description]);
 
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       {title || description ? (
         <div className={styles.header}>
           {sectionTitle}
@@ -43,7 +44,7 @@ export const DocSection = ({
         <></>
       )}
 
-      <div className={`${styles.content} ${styles[contentLayout]}`}>
+      <div className={classNames(styles.content, styles[contentLayout])}>
         {children}
       </div>
     </div>

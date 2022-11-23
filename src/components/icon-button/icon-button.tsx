@@ -1,4 +1,5 @@
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
+import classNames from "classnames";
 import { Icon, Glyph } from "../icon/icon";
 import styles from "./icon-button.module.scss";
 
@@ -18,7 +19,7 @@ export const IconButton = ({
 }: IconButtonProps) => {
   return (
     <button
-      className={`${styles.root} ${size && styles[size]} ${className} `}
+      className={classNames(styles.root, { [styles[size]]: size }, className)}
       {...props}
     >
       <Icon size={size} glyph={glyph} />

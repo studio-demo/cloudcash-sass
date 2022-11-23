@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import classNames from "classnames";
 import styles from "./page-title.module.scss";
 
 export interface PageTitleProps {
@@ -7,5 +8,5 @@ export interface PageTitleProps {
 }
 
 export const PageTitle: FC<PageTitleProps> = ({ className, children }) => {
-  return <h1 className={`${styles.root} ${className}`}>{children}</h1>;
+  return <h1 className={classNames(styles.root, className)}>{children}</h1>;
 };

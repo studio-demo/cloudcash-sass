@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import classNames from "classnames";
 import styles from "./page-subtitle.module.scss";
 
 export interface PageSubtitleProps {
@@ -10,5 +11,5 @@ export const PageSubtitle: FC<PageSubtitleProps> = ({
   className,
   children,
 }) => {
-  return <span className={`${styles.root} ${className}`}>{children}</span>;
+  return <span className={classNames(styles.root, className)}>{children}</span>;
 };

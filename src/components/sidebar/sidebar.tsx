@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import classNames from "classnames";
 import Nav from "../nav/nav";
 import { Icon } from "../icon/icon";
 import styles from "./sidebar.module.scss";
@@ -10,7 +11,7 @@ interface SidebarProps {
 
 export const Sidebar: FC<SidebarProps> = ({ className }) => {
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <img src="/images/logo.svg" alt="Cloudcash logo" />
       <Nav className={styles.nav}>
         <Nav.Item selected>

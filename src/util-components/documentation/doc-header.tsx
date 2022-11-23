@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import classNames from "classnames";
 import styles from "./doc-header.module.scss";
 
 export interface DocHeaderProps {
@@ -29,7 +30,7 @@ export const DocHeader = ({
   }, [title, description]);
 
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <div className={styles.header}>
         {pageTitle}
         {pageDescription}

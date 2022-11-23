@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import styles from "./credit-card.module.scss";
 
 interface CreditCardProps {
@@ -21,7 +22,7 @@ export const CreditCard = ({
   expireDateYear,
 }: CreditCardProps) => {
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <div className={styles.cardLogo}>{logo ? logo : "Cloudcash"}</div>
       <div
         className={styles.cardNumber}

@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import classNames from "classnames";
 import styles from "./nav-item.module.scss";
 
 export interface NavItemProps {
@@ -17,7 +18,11 @@ export const NavItem: FC<NavItemProps> = ({
       href="/#"
       tabIndex={selected ? -1 : undefined}
       aria-current={selected ? true : undefined}
-      className={`${styles.root} ${selected && styles.selected} ${className}`}
+      className={classNames(
+        styles.root,
+        { [styles.selected]: selected },
+        className
+      )}
     >
       {children}
     </a>

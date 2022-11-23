@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import { ProgressBar } from "./progress-bar/progress-bar";
 import styles from "./progress.module.scss";
 
@@ -20,7 +21,7 @@ export const Progress = ({
   const progressValue = calculateProgress(value, max);
 
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={classNames(styles.root, className)}>
       <ProgressBar
         className={styles.bar}
         customFillClassName={customFillClassName}
