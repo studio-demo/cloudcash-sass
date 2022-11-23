@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar } from "../avatar/avatar";
 import Card from "../card/card";
 import { IconButton } from "../icon-button/icon-button";

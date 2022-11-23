@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import classNames from "classnames";
 import { Sidebar } from "../sidebar/sidebar";
 import styles from "./dashboard-layout.module.scss";

@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classnames";
 import { ProgressBar } from "./progress-bar/progress-bar";
 import styles from "./progress.module.scss";

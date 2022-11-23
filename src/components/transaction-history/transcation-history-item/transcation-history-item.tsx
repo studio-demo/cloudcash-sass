@@ -1,4 +1,4 @@
-import React, { LiHTMLAttributes } from "react";
+import { LiHTMLAttributes } from "react";
 import { Icon, Glyph } from "../../icon/icon";
 import styles from "./transaction-history-item.module.scss";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classnames";
 import { Icon } from "../icon/icon";
 import styles from "./avatar.module.scss";

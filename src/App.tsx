@@ -1,4 +1,3 @@
-import React from "react";
 import { Cards } from "./components/cards/cards";
 import { DashboardLayout } from "./components/dashboard-layout/dashboard-layout";
 import { Goals } from "./components/goals/goals";

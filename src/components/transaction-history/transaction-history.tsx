@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../card/card";
 import { TransactionHistoryItem } from "./transcation-history-item/transcation-history-item";
 import styles from "./transaction-history.module.scss";

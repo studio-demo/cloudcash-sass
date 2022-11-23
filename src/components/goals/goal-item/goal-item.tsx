@@ -1,4 +1,4 @@
-import React, { LiHTMLAttributes } from "react";
+import { LiHTMLAttributes } from "react";
 import styles from "./goal-item.module.scss";
 
 interface GoalItemProps extends LiHTMLAttributes<HTMLLIElement> {
@@ -24,10 +24,10 @@ export const GoalItem = ({
   }).format(amount);
   return (
     <li className={styles.root}>
-      <a href="#">
+      <a href="/">
         <div className={styles.amount}>{formattedAmount}</div>
         <div className={styles.date}>{date}</div>
-        <img className={styles.illustration} src={imageUrl}></img>
+        <img className={styles.illustration} src={imageUrl} alt=""></img>
         <h3 className={styles.title}>{title}</h3>
       </a>
     </li>

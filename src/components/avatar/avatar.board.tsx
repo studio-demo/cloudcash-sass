@@ -1,4 +1,3 @@
-import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import { Avatar } from "./avatar";
 import { Doc } from "../../util-components/documentation/doc";

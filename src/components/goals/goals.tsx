@@ -1,4 +1,3 @@
-import React from "react";
 import { IconButton } from "../icon-button/icon-button";
 import { GoalItem } from "./goal-item/goal-item";
 import styles from "./goals.module.scss";

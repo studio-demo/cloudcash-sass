@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 import { BlockTitle } from "./block-title/block-title";
 import { BlockSubtitle } from "./block-subtitle/block-subtitle";
 import { BlockContent } from "./block-content/block-content";

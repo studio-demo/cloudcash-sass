@@ -1,7 +1,6 @@
-import React from "react";
 import Card from "../card/card";
 import { CardsDetail } from "./cards-detail/cards-detail";
-import { CreditCard } from "../credit-card/credit-card";
+// import { CreditCard } from "../credit-card/credit-card";
 import { CreditCardSvg } from "../credit-card-svg/credit-card-svg";
 import styles from "./cards.module.scss";
 

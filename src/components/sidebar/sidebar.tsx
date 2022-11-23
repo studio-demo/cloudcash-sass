@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 import Nav from "../nav/nav";
 import { Icon } from "../icon/icon";

@@ -1,25 +1,24 @@
-import React from "react";
 import { OutcomeStatisticsItem } from "./outcome-statistics-item/outcome-statistics-item";
 import styles from "./outcome-statistics.module.scss";
 
 export const OutcomeStatistics = () => {
-  const statistics = [
-    {
-      type: "shopping",
-      typeLabel: "Shopping",
-      progress: 100,
-    },
-    {
-      type: "electronics",
-      typeLabel: "Electronics",
-      progress: 21,
-    },
-    {
-      type: "travel",
-      typeLabel: "Travel",
-      progress: 74,
-    },
-  ];
+  // const statistics = [
+  //   {
+  //     type: "shopping",
+  //     typeLabel: "Shopping",
+  //     progress: 100,
+  //   },
+  //   {
+  //     type: "electronics",
+  //     typeLabel: "Electronics",
+  //     progress: 21,
+  //   },
+  //   {
+  //     type: "travel",
+  //     typeLabel: "Travel",
+  //     progress: 74,
+  //   },
+  // ];
 
   return (
     <div className={styles.root}>

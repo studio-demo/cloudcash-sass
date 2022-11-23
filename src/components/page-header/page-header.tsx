@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import classNames from "classnames";
 import { PageSubtitle, PageSubtitleProps } from "./page-subtitle/page-subtitle";
 import { PageTitle, PageTitleProps } from "./page-title/page-title";

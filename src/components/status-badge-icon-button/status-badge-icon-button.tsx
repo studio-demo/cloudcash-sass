@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
 import classNames from "classnames";
 import { Icon, Glyph } from "../icon/icon";
 import styles from "./status-badge-icon-button.module.scss";

@@ -1,4 +1,4 @@
-import React, { LiHTMLAttributes } from "react";
+import { LiHTMLAttributes } from "react";
 import classNames from "classnames";
 import { Icon, Glyph } from "../../icon/icon";
 import { Progress } from "../../progress/progress";

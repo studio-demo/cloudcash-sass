@@ -1,8 +1,7 @@
-import React from 'react';
-import { createBoard } from '@wixc3/react-board';
-import { NewTransaction } from './new-transaction';
+import { createBoard } from "@wixc3/react-board";
+import { NewTransaction } from "./new-transaction";
 
 export default createBoard({
-    name: '🧩 New Transaction',
-    Board: () => <NewTransaction />
+  name: "🧩 New Transaction",
+  Board: () => <NewTransaction />,
 });

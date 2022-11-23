@@ -1,4 +1,4 @@
-import React, { ComponentProps } from "react";
+import { ComponentProps } from "react";
 import { AddGlyph } from "./glyphs/add";
 import { ChevronRightGlyph } from "./glyphs/chevron-right";
 import { CreditCardGlyph } from "./glyphs/credit-card";

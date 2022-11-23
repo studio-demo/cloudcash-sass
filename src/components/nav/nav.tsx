@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import classNames from "classnames";
 import { NavItem, NavItemProps } from "./nav-item/nav-item";
 import styles from "./nav.module.scss";

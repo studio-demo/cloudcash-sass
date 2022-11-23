@@ -1,4 +1,3 @@
-import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import Block from "../block";
 import styles from "./block-long-content-test.module.scss";
