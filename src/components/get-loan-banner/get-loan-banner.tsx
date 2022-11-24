@@ -11,7 +11,7 @@ export const GetLoanBanner = ({ className }: GetLoanBannerProps) => {
     <a href="/" className={classNames(styles.root, className)}>
       <div>
         Get Great Loan!
-        <Icon className={styles.icon} glyph="chevronRight" logicalDirection />
+        <Icon className={styles.icon} glyph="chevronRight" />
       </div>
     </a>
   );

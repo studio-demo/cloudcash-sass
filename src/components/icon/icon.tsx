@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { ComponentProps } from "react";
 import { AddGlyph } from "./glyphs/add";
 import { ChevronRightGlyph } from "./glyphs/chevron-right";
@@ -38,14 +39,12 @@ export type Glyph = keyof typeof glyphs;
 export interface IconProps extends ComponentProps<"svg"> {
   className?: string;
   size?: "small" | "medium" | "large" | "huge" | "custom";
-  logicalDirection?: boolean;
   glyph: Glyph;
 }
 
 export const Icon = ({
   className,
   size = "medium",
-  logicalDirection,
   glyph,
   ...props
 }: IconProps) => {
@@ -53,10 +52,11 @@ export const Icon = ({
 
   return (
     <svg
-      className={`
-        ${styles.root} ${size !== "custom" ? styles[size] : ""} ${
-        logicalDirection ? styles.logicalDirection : ""
-      } ${className}`}
+      className={classNames(
+        styles.root,
+        { [styles[size]]: size !== "custom" },
+        className
+      )}
       xmlns="http://www.w3.org/2000/svg"
       height="100%"
       width="100%"

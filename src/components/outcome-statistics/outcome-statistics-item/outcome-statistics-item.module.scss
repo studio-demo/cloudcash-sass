@@ -38,19 +38,11 @@
 }
 
 .shoppingProgressFill {
-  background: linear-gradient(
-    calc(var(--logical-direction-angle) + 90deg),
-    #f79042,
-    #fcae73
-  );
+  background: linear-gradient(90deg, #f79042, #fcae73);
 }
 
 .electronicsProgressFill {
-  background: linear-gradient(
-    calc(var(--logical-direction-angle) + 90deg),
-    #209d43,
-    #2bc255
-  );
+  background: linear-gradient(90deg, #209d43, #2bc255);
 }
 
 .travelProgressFill {
