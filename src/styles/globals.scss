@@ -53,18 +53,6 @@ html {
 //   padding: 0px !important;
 // }
 
-// Direction agnostic layout helper
-// TODO: wrap with sass mixin or function to abstract the implementation
-html {
-  --logical-direction: 1;
-  --logical-direction-angle: 0deg;
-
-  &[dir="rtl"] {
-    --logical-direction: -1;
-    --logical-direction-angle: 180deg;
-  }
-}
-
 // Reset headings and paragraph
 h1,
 h2,
