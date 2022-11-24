@@ -17,10 +17,8 @@
   border-radius: $radius-card;
   color: $color-white;
   background-color: #ed654c;
-  // FIX URL
-  // background-image: url("/images/illustrations/get-loan.svg"),
-  //   linear-gradient(#ed654c, #d05842);
-  background-image: linear-gradient(#ed654c, #d05842);
+  background-image: url("../../assets/images/illustrations/get-loan.svg"),
+    linear-gradient(#ed654c, #d05842);
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;

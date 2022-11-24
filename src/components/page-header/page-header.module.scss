@@ -41,8 +41,8 @@
   height: 2.5rem;
   width: 2.5rem;
   border-radius: $radius-pill;
-  // FIX URL
-  // background: $color-accent url("/images/userpic.svg") no-repeat center;
+  background: $color-accent url("../../assets/images/userpic.svg") no-repeat
+    center;
   background-color: $color-accent;
   background-size: cover;
 }

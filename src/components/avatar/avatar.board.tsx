@@ -3,7 +3,7 @@ import { Avatar } from "./avatar";
 import { Doc } from "../../util-components/documentation/doc";
 import { DocHeader } from "../../util-components/documentation/doc-header";
 import { DocSection } from "../../util-components/documentation/doc-section";
-import img from "../../../public/images/profile-pics/ann.jpg";
+import profilePic from "../../assets/images/profile-pics/john.jpg";
 
 export default createBoard({
   name: "📒 Avatar",
@@ -63,9 +63,8 @@ export default createBoard({
           }
           contentLayout="inline"
         >
-          <Avatar profilePic={img} />
-          <Avatar profilePic="/public/profile-pics/ann.jpg" />
-          <Avatar profilePic="/profile-pics/john.jpg" userName="John" />
+          <Avatar profilePic={profilePic} />
+          <Avatar profilePic={profilePic} userName="John" />
         </DocSection>
       </Doc>
     );

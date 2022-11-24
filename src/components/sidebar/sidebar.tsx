@@ -2,8 +2,10 @@ import { FC } from "react";
 import classNames from "classnames";
 import Nav from "../nav/nav";
 import { Icon } from "../icon/icon";
-import styles from "./sidebar.module.scss";
 import { Button } from "../button/button";
+import logo from "../../assets/images/logo.svg";
+import upgradeTeaser from "../../assets/images/illustrations/sidebar-footer-upgrade.svg";
+import styles from "./sidebar.module.scss";
 
 interface SidebarProps {
   className?: string;
@@ -12,7 +14,7 @@ interface SidebarProps {
 export const Sidebar: FC<SidebarProps> = ({ className }) => {
   return (
     <div className={classNames(styles.root, className)}>
-      <img src="/images/logo.svg" alt="Cloudcash logo" />
+      <img src={logo} alt="Cloudcash logo" />
       <Nav className={styles.nav}>
         <Nav.Item selected>
           <Icon glyph="insights" aria-hidden />
@@ -46,7 +48,7 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
       </Nav>
       <div className={styles.footer}>
         <img
-          src="/images/illustrations/sidebar-footer-upgrade.svg"
+          src={upgradeTeaser}
           className={styles.footerIllustration}
           aria-hidden
           alt=""

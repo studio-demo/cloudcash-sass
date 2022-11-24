@@ -2,28 +2,33 @@ import { Avatar } from "../avatar/avatar";
 import Card from "../card/card";
 import { IconButton } from "../icon-button/icon-button";
 import styles from "./new-transaction.module.scss";
+import profileAnn from "../../assets/images/profile-pics/ann.jpg";
+import profileMonica from "../../assets/images/profile-pics/monica.jpg";
+import profileJohn from "../../assets/images/profile-pics/john.jpg";
+import profileMike from "../../assets/images/profile-pics/mike.jpg";
+// import profileMia from "../../assets/images/profile-pics/mia.jpg";
 
 export const NewTransaction = () => {
   const users = [
     {
       userName: "Ann",
-      profilePic: "/profile-pics/ann.jpg",
+      profilePic: profileAnn,
     },
     {
       userName: "Monica",
-      profilePic: "/profile-pics/monica.jpg",
+      profilePic: profileMonica,
     },
     {
       userName: "John",
-      profilePic: "/profile-pics/john.jpg",
+      profilePic: profileJohn,
     },
     {
       userName: "Mike",
-      profilePic: "/profile-pics/mike.jpg",
+      profilePic: profileMike,
     },
     // {
     //   userName: "Mia",
-    //   profilePic: "profile-pics/mia.jpg",
+    //   profilePic: profileMia,
     // },
   ];
   return (

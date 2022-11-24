@@ -22,10 +22,8 @@
   padding: $spacing-2-5;
   border-radius: $radius-xxx-large;
   background-color: #197bbd;
-  // FIX URL
-  // background-image: url("./images/credit-card-illustration.svg"),
-  //   linear-gradient(#197bbd, #3391d0);
-  background-image: linear-gradient(#197bbd, #3391d0);
+  background-image: url("../../assets/images/credit-card-illustration.svg"),
+    linear-gradient(#197bbd, #3391d0);
   background-size: cover;
   color: $color-white;
   box-shadow: 0 8px 12px -8px rgb(64 64 64 / 50%),
