@@ -24,7 +24,7 @@ export const GoalItem = ({
   }).format(amount);
   return (
     <li className={styles.root}>
-      <a href="/">
+      <a href="#0">
         <div className={styles.amount}>{formattedAmount}</div>
         <div className={styles.date}>{date}</div>
         <img className={styles.illustration} src={imageUrl} alt=""></img>

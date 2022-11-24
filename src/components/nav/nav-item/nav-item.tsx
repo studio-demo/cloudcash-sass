@@ -15,7 +15,7 @@ export const NavItem: FC<NavItemProps> = ({
 }) => {
   return (
     <a
-      href="/#"
+      href="#0"
       tabIndex={selected ? -1 : undefined}
       aria-current={selected ? true : undefined}
       className={classNames(

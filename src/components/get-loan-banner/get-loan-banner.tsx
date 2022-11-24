@@ -8,7 +8,7 @@ interface GetLoanBannerProps {
 
 export const GetLoanBanner = ({ className }: GetLoanBannerProps) => {
   return (
-    <a href="/" className={classNames(styles.root, className)}>
+    <a href="#0" className={classNames(styles.root, className)}>
       <div>
         Get Great Loan!
         <Icon className={styles.icon} glyph="chevronRight" />
