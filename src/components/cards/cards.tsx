@@ -57,7 +57,7 @@ export const Cards = ({ className }: CardsProps) => {
             trend="negative"
           />
           <div className={styles.deactivateCardSection}>
-            Deactivate Card Switch
+            {/* Deactivate Card Switch */}
           </div>
         </div>
       </Card.Content>
