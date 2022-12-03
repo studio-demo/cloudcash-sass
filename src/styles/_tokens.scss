@@ -37,18 +37,14 @@ $media-wide-desktop: 1474px;
 /*
  * ----------------- Border Radius -----------------
  */
-$radius-module: 0.25rem;
 
-// Modular
-$radius-small: $radius-module; //4px
-$radius-medium: $radius-module * 1.5; //6px
-$radius-large: $radius-module * 2; //8px
-$radius-x-large: $radius-module * 3; //12px
-$radius-xx-large: $radius-module * 4; //16px
-$radius-xxx-large: $radius-module * 5; //32px
-
-// Special Values
 $radius-min: 1px;
+$radius-small: 0.25rem; //4px
+$radius-medium: 0.375rem; //6px
+$radius-large: 0.5rem; //8px
+$radius-x-large: 0.75rem; //12px
+$radius-xx-large: 1rem; //16px
+$radius-xxx-large: 2rem; //32px
 $radius-pill: 999rem;
 
 // Semantic
@@ -57,23 +53,21 @@ $radius-card: $radius-xxx-large;
 /*
  * -------------------- Spacing --------------------
  */
-$spacing-module: 0.5rem;
-
 // Dictionary
-$spacing-0-25: math.div($spacing-module, 4); //2px
-$spacing-0-5: math.div($spacing-module, 2); //4px
-$spacing-1: $spacing-module; //8px
-$spacing-1-5: $spacing-module * 1.5; //12px
-$spacing-2: $spacing-module * 2; //16px
-$spacing-2-5: $spacing-module * 2.5; //20px
-$spacing-3: $spacing-module * 3; //24px
-$spacing-4: $spacing-module * 4; //32px
-$spacing-5: $spacing-module * 5; //40px
-$spacing-6: $spacing-module * 6; //48px
-$spacing-7: $spacing-module * 7; //56px
-$spacing-8: $spacing-module * 8; //64px
-$spacing-9: $spacing-module * 9; //72px
-$spacing-10: $spacing-module * 10; //80px
+$spacing-0-25: 0.125rem; //2px
+$spacing-0-5: 0.25rem; //4px
+$spacing-1: 0.5rem; //8px
+$spacing-1-5: 0.75rem; //12px
+$spacing-2: 1rem; //16px
+$spacing-2-5: 1.25rem; //20px
+$spacing-3: 1.5rem; //24px
+$spacing-4: 2rem; //32px
+$spacing-5: 2.5rem; //40px
+$spacing-6: 3rem; //48px
+$spacing-7: 3.5rem; //56px
+$spacing-8: 4rem; //64px
+$spacing-9: 4.5rem; //72px
+$spacing-10: 5rem; //80px
 
 // Semantic
 $spacing-page-block: $spacing-4;
