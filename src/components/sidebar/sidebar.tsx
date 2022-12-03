@@ -1,8 +1,8 @@
-import { FC } from "react";
 import classNames from "classnames";
-import Nav from "../nav/nav";
-import { Icon } from "../icon/icon";
 import { Button } from "../button/button";
+import { Icon } from "../icon/icon";
+import { Nav } from "../nav/nav";
+import { NavItem } from "../nav/nav-item/nav-item";
 import logo from "../../assets/images/logo.svg";
 import upgradeTeaser from "../../assets/images/illustrations/sidebar-footer-upgrade.svg";
 import styles from "./sidebar.module.scss";
@@ -11,40 +11,35 @@ interface SidebarProps {
   className?: string;
 }
 
-export const Sidebar: FC<SidebarProps> = ({ className }) => {
+export const Sidebar = ({ className }: SidebarProps) => {
   return (
     <div className={classNames(styles.root, className)}>
       <img src={logo} alt="Cloudcash logo" />
       <Nav className={styles.nav}>
-        <Nav.Item selected>
+        <NavItem selected>
           <Icon glyph="insights" aria-hidden />
           Overview
-        </Nav.Item>
-
-        <Nav.Item>
+        </NavItem>
+        <NavItem>
           <Icon glyph="list" aria-hidden />
           Transactions
-        </Nav.Item>
-
-        <Nav.Item>
+        </NavItem>
+        <NavItem>
           <Icon glyph="creditCard" aria-hidden />
           Cards
-        </Nav.Item>
-
-        <Nav.Item>
+        </NavItem>
+        <NavItem>
           <Icon glyph="draft" aria-hidden />
           Invoices
-        </Nav.Item>
-
-        <Nav.Item>
+        </NavItem>
+        <NavItem>
           <Icon glyph="verified" aria-hidden />
           Goals
-        </Nav.Item>
-
-        <Nav.Item>
+        </NavItem>
+        <NavItem>
           <Icon glyph="settings" aria-hidden />
           Settings
-        </Nav.Item>
+        </NavItem>
       </Nav>
       <div className={styles.footer}>
         <img
