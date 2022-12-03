@@ -1,7 +1,4 @@
-@import "../../../styles/color";
-@import "../../../styles/radius";
-@import "../../../styles/spacing";
-@import "../../../styles/type";
+@import "../../../styles/tokens";
 
 .root {
   display: grid;
@@ -18,8 +15,8 @@
   aspect-ratio: 1;
   background-color: $color-divider;
   border-radius: $radius-small;
-  box-shadow: 0px 16px 24px rgba($color-black, 0.1),
-    0px 4px 4px -4px rgba($color-black, 0.1);
+  box-shadow: 0px 16px 24px rgba($color-palette-black, 0.1),
+    0px 4px 4px -4px rgba($color-palette-black, 0.1);
 
   &.shopping {
     background-color: #ffeada;

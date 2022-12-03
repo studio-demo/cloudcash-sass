@@ -1,0 +1,99 @@
+@use "sass:math";
+/*
+ * --------------------- Colors --------------------
+ */
+
+// Palette
+$color-palette-black: #404040;
+$color-palette-gray: #757575;
+$color-palette-light-gray: #ebebeb;
+$color-palette-white: #ffffff;
+$color-palette-blue: #197bbd;
+$color-palette-light-blue: #70a6e8;
+$color-palette-lightest-blue: #f0f7ff;
+$color-palette-yellow: #ffc145;
+$color-palette-green: #439a86;
+$color-palette-red: #bb4430;
+
+// Semantic
+$color-background: $color-palette-white;
+$color-primary: $color-palette-black;
+$color-secondary: $color-palette-gray;
+$color-accent: $color-palette-blue;
+$color-upgrade: $color-palette-yellow;
+$color-divider: $color-palette-light-gray;
+$color-positive: $color-palette-green;
+$color-negative: $color-palette-red;
+$color-focus: $color-palette-blue;
+
+/*
+ * --------------------- Media ---------------------
+ */
+$media-mobile: 478px;
+$media-tablet: 991px;
+$media-desktop: 1279px;
+$media-wide-desktop: 1474px;
+
+/*
+ * ----------------- Border Radius -----------------
+ */
+$radius-module: 0.25rem;
+
+// Modular
+$radius-small: $radius-module; //4px
+$radius-medium: $radius-module * 1.5; //6px
+$radius-large: $radius-module * 2; //8px
+$radius-x-large: $radius-module * 3; //12px
+$radius-xx-large: $radius-module * 4; //16px
+$radius-xxx-large: $radius-module * 5; //32px
+
+// Special Values
+$radius-min: 1px;
+$radius-pill: 999rem;
+
+// Semantic
+$radius-card: $radius-xxx-large;
+
+/*
+ * -------------------- Spacing --------------------
+ */
+$spacing-module: 0.5rem;
+
+// Dictionary
+$spacing-0-25: math.div($spacing-module, 4); //2px
+$spacing-0-5: math.div($spacing-module, 2); //4px
+$spacing-1: $spacing-module; //8px
+$spacing-1-5: $spacing-module * 1.5; //12px
+$spacing-2: $spacing-module * 2; //16px
+$spacing-2-5: $spacing-module * 2.5; //20px
+$spacing-3: $spacing-module * 3; //24px
+$spacing-4: $spacing-module * 4; //32px
+$spacing-5: $spacing-module * 5; //40px
+$spacing-6: $spacing-module * 6; //48px
+$spacing-7: $spacing-module * 7; //56px
+$spacing-8: $spacing-module * 8; //64px
+$spacing-9: $spacing-module * 9; //72px
+$spacing-10: $spacing-module * 10; //80px
+
+// Semantic
+$spacing-page-block: $spacing-4;
+$spacing-page-inline: $spacing-6;
+
+/*
+ * --------------------- Type ----------------------
+ */
+
+$-font-family: "Inter", Arial, Helvetica, sans-serif;
+
+// Type tokens
+$type-display-large: 2.875rem/3.25rem $-font-family;
+$type-display-medium: 2.313rem/3rem $-font-family;
+$type-display-small: 1.875rem/2.5rem $-font-family;
+$type-heading-large: 1.5rem/2rem $-font-family;
+$type-heading-medium: 1.25rem/1.75rem $-font-family;
+$type-heading-small: 1.125rem/1.75rem $-font-family;
+$type-body-large: 1rem/1.5rem $-font-family;
+$type-body-medium: 0.875rem/1.5rem $-font-family;
+$type-body-small: 0.75rem/1.25rem $-font-family;
+$type-body-tiny: 0.688rem/1.25rem $-font-family;
+$type-body-micro: 0.563rem/1rem $-font-family;

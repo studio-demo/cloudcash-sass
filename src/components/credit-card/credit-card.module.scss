@@ -1,7 +1,4 @@
-@import "../../styles/color";
-@import "../../styles/radius";
-@import "../../styles/spacing";
-@import "../../styles/type";
+@import "../../styles/tokens";
 
 .root {
   //Credit card ratio
@@ -24,7 +21,7 @@
   background-image: url("../../assets/images/credit-card-illustration.svg"),
     linear-gradient(#197bbd, #3391d0);
   background-size: cover;
-  color: $color-white;
+  color: $color-palette-white;
   box-shadow: 0 8px 12px -8px rgb(64 64 64 / 50%),
     0 2px 4px -2px rgb(64 64 64 / 10%);
 }

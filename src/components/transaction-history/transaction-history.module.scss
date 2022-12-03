@@ -1,7 +1,5 @@
 @import "./transaction-history-common";
-@import "../../styles/color";
-@import "../../styles/media";
-@import "../../styles/spacing";
+@import "../../styles/tokens";
 
 .legend {
   @media only screen and (min-width: #{$media-tablet + 1}) {

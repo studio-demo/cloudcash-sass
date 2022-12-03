@@ -1,8 +1,5 @@
 @import "../transaction-history-common";
-@import "../../../styles/color";
-@import "../../../styles/media";
-@import "../../../styles/radius";
-@import "../../../styles/spacing";
+@import "../../../styles/tokens";
 
 .root {
   @include transaction-list-grid;

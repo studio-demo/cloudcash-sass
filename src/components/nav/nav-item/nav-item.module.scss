@@ -1,6 +1,4 @@
-@import "../../../styles/color";
-@import "../../../styles/spacing";
-@import "../../../styles/radius";
+@import "../../../styles/tokens";
 
 .root {
   padding-top: $spacing-1;
@@ -12,7 +10,7 @@
   font-weight: 600;
 
   &:hover {
-    background-color: $color-lightest-blue;
+    background-color: $color-palette-lightest-blue;
     color: $color-accent;
   }
 
@@ -27,6 +25,6 @@
 }
 
 .selected {
-  background-color: $color-lightest-blue;
+  background-color: $color-palette-lightest-blue;
   color: $color-accent;
 }

@@ -1,5 +1,4 @@
-@import "../../styles/spacing";
-@import "../../styles/media";
+@import "../../styles/tokens";
 
 @mixin transaction-list-grid {
   display: grid;

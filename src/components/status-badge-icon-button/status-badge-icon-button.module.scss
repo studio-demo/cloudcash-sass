@@ -1,6 +1,4 @@
-@import "../../styles/color";
-@import "../../styles/radius";
-@import "../../styles/spacing";
+@import "../../styles/tokens";
 
 .root {
   display: inline-block;
@@ -40,6 +38,6 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: $radius-pill;
-  background-color: $color-red;
+  background-color: $color-palette-red;
   box-shadow: 0 0 0 2px $color-background;
 }

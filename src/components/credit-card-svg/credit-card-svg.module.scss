@@ -1,5 +1,4 @@
-@import "../../styles/color";
-@import "../../styles/type";
+@import "../../styles/tokens";
 
 .root {
   filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.08))
@@ -12,7 +11,7 @@
   background-image: url("../../assets/images/credit-card-illustration.svg"),
     linear-gradient(#197bbd, #3391d0);
   background-size: cover;
-  color: $color-white;
+  color: $color-palette-white;
   aspect-ratio: 320/206; //Credit card ratio
   border-radius: 2rem;
   font-feature-settings: "cv10", "cv11", "ss01";
